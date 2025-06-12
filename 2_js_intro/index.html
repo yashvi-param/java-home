@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Day-2</title>
+</head>
+
+<body>
+    <div class="container my-5 border p-2">
+        <div class="row">
+            <div class=" col-6 ">
+                <div class="d-flex mb-3 gap-2">
+                    <label>cookies: </label>
+                    <input name="cookies name" id="cookies" type="number" class="" />
+                </div>
+                <div class="mb-3 d-flex gap-2">
+                    <label>chips: </label>
+                    <input id="chips" type="number" class="" />
+                </div>
+                <div class="mb-3 d-flex gap-2">
+                    <label>milk: </label>
+                    <input id="milk" type="number" class="" />
+                </div>
+                <div class="mb-3 d-flex gap-2">
+                    <label>bread: </label>
+                    <input id="bread" type="number" class="" />
+                </div>
+            </div>
+            <div class="d-flex mb-3 gap-2">
+                <button onclick="bill()" class="btn btn-sm btn-dark">Generate bill</button>
+            </div>
+
+            <div class="col-6">
+
+                <h4> amit kirana shop </h4>
+
+                <p>****************************</p>
+
+                <table class="table border-none">
+                    <tr>
+                        <th>item</th>
+                        <th>price</th>
+                        <th>qtn</th>
+                        <th>total</th>
+                    </tr>
+                    <tr>
+                        <th>cookies</th>
+                        <th>20/-</th>
+                        <th id="cookies_qtn"></th>
+                        <th id="cookies_price"></th>
+                    </tr>
+                    <tr>
+                        <th>chips</th>
+                        <th>10/-</th>
+                        <th id="chips_qtn"></th>
+                        <th id="chips_price"></th>
+                    </tr>
+                    <tr>
+                        <th>milk</th>
+                        <th>34/-</th>
+                        <th id="milk_qtn"></th>
+                        <th id="milk_price"></th>
+                    </tr>
+                    <tr>
+                        <th>bread</th>
+                        <th>28/-</th>
+                        <th id="bread_qtn"></th>
+                        <th id="bread_price"></th>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td class="fw-bold"> total:-</td>
+                        <td id="total_qtn"></td>
+                        <td class="fw-bold" id="total_price"></td>
+                    </tr>
+                </table>
+            </div>
+         </div>
+     </div>
+
+</body> 
+<script src="index.js"></script>
+
+</html>
